@@ -30,7 +30,7 @@ jobs:
           gcc -v
           ar --version
           sudo apt update
-          sudo apt install -y bc bison build-essential ccache curl flex glibc-source g++-multilib gcc-multilib binutils-aarch64-linux-gnu git gnupg gperf imagemagick libncurses-dev lib32readline-dev lib32z1-dev liblz4-tool libncurses6 libncurses5-dev libsdl1.2-dev libssl-dev libwxgtk3.2-dev libxml2 libxml2-utils lzop pngcrush rsync schedtool squashfs-tools xsltproc zip zlib1g-dev python tmate ssh neofetch
+          sudo apt install -y bc bison build-essential ccache curl flex glibc-source g++-multilib gcc-multilib binutils-aarch64-linux-gnu git gnupg gperf imagemagick libncurses-dev lib32readline-dev lib32z1-dev liblz4-tool libncurses6 libncurses5-dev libsdl1.2-dev libssl-dev libwxgtk3.2-dev libxml2 libxml2-utils lzop pngcrush rsync schedtool squashfs-tools xsltproc zip zlib1g-dev python-is-python3 tmate ssh neofetch
           neofetch
 
       - name: Lets compile
