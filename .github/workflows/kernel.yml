@@ -18,13 +18,13 @@ env:
 
 jobs:
   kernel-build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
 
     steps:
       - name: Initializing environment
         run: |
-          git config --global user.name "sarthakroy2002"
-          git config --global user.email "sarthakroy2002@gmail.com"
+          git config --global user.name "Ansh"
+          git config --global user.email "singhansh64321@gmail.com"
           df -h
           ld --version
           gcc -v
@@ -39,10 +39,10 @@ jobs:
           cd kernel
           rm -rf .git
           bash build.sh
-          git clone https://"sarthakroy2002":"${GITHUB_TOKEN}"@github.com/sarthakroy2002/device_realme_RMX2020-kernel -b fifteen push
+          git clone https://"UltimateAnsh":"${GITHUB_TOKEN}"@github.com/UltimateAnsh/device_realme_salaa-kernel -b sixteen push
           cp -r out/arch/arm64/boot/Image.gz push
           cd push
           git add .
-          git commit -m "RMX2020-kernel: Update kernel prebuilts" -m "- Build Date: $(date)" -s
+          git commit -m "salaa-kernel: Update kernel prebuilts" -m "- Build Date: $(date)" -s
           git push -f
 
